@@ -1,0 +1,29 @@
+JOB_DESCRIPTION_SECTION
+   .JobId             760:auto 
+   .JobTitle          "dealer: applet"
+   .AppPathSfx        "../CST/mb_ota/applets/dealer/bin"
+   .MOEnabled         "true"
+   .ForProfile        "all"
+   .Card_VendorOrType "G+_Java"
+   #CAP_FILE 		"dealer.cap"
+   #INST_APP_GSM_PARAMETER  "<0100 FF 00 14.01.00.00>"
+   
+   APPLETS_DESCRIPTION_SECTION
+   #--------------------------------------------------
+    .Subtask  "Applet removal section"
+   #--------------------------------------------------
+        #DEL_APP .Send "010" "mc_delapp.hex"  "In:Hex" "Out:0348"  "Del:true"  "WDel:false" "" "SEC:_DES_:03.08.1200.00.10.000000.R0000000001"
+        #DEL_PKG .Send "011" "mc_delpkg.hex"  "In:Hex" "Out:0348"  "Del:true"  "WDel:true"  "" "SEC:_DES_:03.08.1200.00.10.000000.R0000000001"
+        .Send "12" "Dealer menu ustlaa" "In:InL" "Out:Text"  "Del:true"  "WDel:true"
+        .Print "Dealer menu ustlaa"
+        .Exit
+   #--------------------------------------------------
+    .Subtask  "Applet installation section"
+   #----------------------------------------------------
+        #INST_PKG .Send "031" "mc_instpkg.hex" "In:Hex" "Out:0348"  "Del:true"  "WDel:true"  "" "SEC:_DES_:03.08.1200.00.10.000000.R0000000001"
+        #LOAD_PKG .Send "1**" "mc_load_**.hex" "In:Hex" "Out:0348"  "Del:true"  "WDel:false" "" "SEC:_DES_:03.08.1200.00.10.000000.R0000000001"
+        #INST_APP .Send "200" "mc_instapp.hex" "In:Hex" "Out:0348"  "Del:true"  "WDel:false" "" "SEC:_DES_:03.08.1221.00.10.000000.R0000000001"
+        .Send "201" "Dealer menu suulaa. Ta gar utsaa untraagaad asaana uu" "In:InL" "Out:Text"  "Del:true"  "WDel:true"
+        .Print "Dealer menu suulaa"
+       .Exit
+#------------------------------------------------------------------------------

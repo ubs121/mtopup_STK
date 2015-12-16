@@ -1,0 +1,3504 @@
+####################################################
+Gemplus - Spy Log
+     Mon Nov 12 14:41:29 GMT+08:00 2007
+####################################################
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 A4 00 00 02 3F 00 
+SELECT
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+9F 16 
+OK + DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 A4 00 00 02 7F 20 
+SELECT
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+9F 16 
+OK + DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C0 00 00 16 
+GET RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 00 00 00 00 00 09 11 00 16 0A 00 83 8A 83 8A 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 A4 00 00 02 6F AE 
+SELECT
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+9F 0F 
+OK + DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 B0 00 00 01 
+READ BINARY
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+03 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 A4 00 00 02 3F 00 
+SELECT
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+9F 16 
+OK + DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 A4 00 00 02 7F 20 
+SELECT
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+9F 16 
+OK + DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C0 00 00 16 
+GET RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 00 00 00 00 00 09 11 00 16 0A 00 83 8A 83 8A 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 20 00 01 08 33 35 31 30 FF FF FF FF 
+VERIFY CHV
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+90 00 
+OK
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 10 00 00 13 3B 67 FF 7F 1F 02 0F 0B 41 00 00 00 00 86 98 04 00 00 00 
+TERMINAL PROFILE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 3B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 3B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 39 81 03 01 25 00 82 02 81 82 85 04 69 43 42 53 8F 0E 01 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 07 82 44 65 61 6C 65 72 8F 0A 83 4D 6F 62 69 4D 45 44 49 41 18 03 24 00 24 90 00 
+SET UP MENU
+
+	CMD:SET UP MENU
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =4
+		iCBS
+	ITEM:1 - Molile Dealer
+	ITEM:130 - Dealer
+	ITEM:131 - MobiMEDIA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 25 00 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+90 00 
+OK
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C2 00 00 09 D3 07 02 02 01 81 10 01 01 
+ENVELOPE: Menu selection
+
+	DEVICE:KEYPAD -> SIM
+	ITEM ID:1
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 32 39 36 34 36 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 26 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 26 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 24 81 03 01 21 80 82 02 81 02 8D 19 04 4D 6F 62 69 43 61 72 64 3A 0A 33 30 30 30 30 3E 39 39 32 39 36 34 36 34 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =24
+		MobiCard:
+30000>99296464
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 31 32 33 34 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 33 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 33 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 31 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1B 0F AA 58 0E A6 9A C1 60 30 98 2A 97 93 E5 6C 34 1B 4D 15 93 CD 68 B5 11 34 35 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =27
+		0F AA 58 0E A6 9A C1 60 30 98 2A 97 93 E5 6C 34 1B 4D 15 93 CD 68 B5 11 34 35 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 30 39 39 31 32 31 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 24 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 24 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 22 81 03 01 21 80 82 02 81 02 8D 17 04 4D 6F 62 69 43 61 72 64 3A 0A 35 30 30 3E 39 39 30 39 39 31 32 31 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =22
+		MobiCard:
+500>99099121
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 31 32 36 35 36 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 31 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 31 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 2F 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 19 0F AA 58 0E A6 AA C1 60 AA 5C 0E 96 CB C5 64 31 55 4C 66 AB D9 46 00 36 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =25
+		0F AA 58 0E A6 AA C1 60 AA 5C 0E 96 CB C5 64 31 55 4C 66 AB D9 46 00 36 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 02 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 30 39 39 31 32 31 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 25 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 25 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 23 81 03 01 21 80 82 02 81 02 8D 18 04 4D 6F 62 69 43 61 72 64 3A 0A 31 30 30 30 3E 39 39 30 39 39 31 32 31 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =23
+		MobiCard:
+1000>99099121
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 36 35 34 36 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 32 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 32 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 30 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1A 0F AA 58 0E A6 8A C1 60 30 55 2E 07 CB E5 62 B2 98 CA 56 A3 D9 6A 23 36 35 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =26
+		0F AA 58 0E A6 8A C1 60 30 55 2E 07 CB E5 62 B2 98 CA 56 A3 D9 6A 23 36 35 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 03 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 32 39 36 34 36 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 25 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 25 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 23 81 03 01 21 80 82 02 81 02 8D 18 04 4D 6F 62 69 43 61 72 64 3A 0A 32 35 30 30 3E 39 39 32 39 36 34 36 34 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =23
+		MobiCard:
+2500>99296464
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 35 34 36 35 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 32 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 32 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 30 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1A 0F AA 58 0E A6 92 D5 60 30 55 2E 27 CB D9 68 36 9A AA 46 B3 D5 68 23 35 34 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =26
+		0F AA 58 0E A6 92 D5 60 30 55 2E 27 CB D9 68 36 9A AA 46 B3 D5 68 23 35 34 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 04 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 36 34 35 39 35 35 39 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 25 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 25 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 23 81 03 01 21 80 82 02 81 02 8D 18 04 4D 6F 62 69 43 61 72 64 3A 0A 36 35 30 30 3E 36 34 35 39 35 35 39 35 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =23
+		MobiCard:
+6500>64595595
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 36 35 34 36 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 32 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 32 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 30 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1A 0F AA 58 0E A6 B2 D5 60 30 95 8D 56 CB D5 6A B9 9A CA 56 A3 D9 6A 23 36 35 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =26
+		0F AA 58 0E A6 B2 D5 60 30 95 8D 56 CB D5 6A B9 9A CA 56 A3 D9 6A 23 36 35 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 06 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 38 37 39 38 37 39 38 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 25 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 25 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 23 81 03 01 21 80 82 02 81 02 8D 18 04 4D 6F 62 69 43 61 72 64 3A 0A 38 30 30 30 3E 39 38 37 39 38 37 39 38 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =23
+		MobiCard:
+8000>98798798
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 36 35 34 36 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 32 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 32 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 30 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1A 0F AA 58 0E A6 C2 C1 60 30 55 0E 77 CB E1 6E 39 9C CA 56 A3 D9 68 23 36 34 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =26
+		0F AA 58 0E A6 C2 C1 60 30 55 0E 77 CB E1 6E 39 9C CA 56 A3 D9 68 23 36 34 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 06 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 23 00 02 02 82 81 03 01 11 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 05 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 38 39 38 39 38 37 39 38 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 26 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 26 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 24 81 03 01 21 80 82 02 81 02 8D 19 04 4D 6F 62 69 43 61 72 64 3A 0A 31 30 30 30 30 3E 38 39 38 39 38 37 39 38 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =24
+		MobiCard:
+10000>89898798
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 35 34 36 35 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 33 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 33 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 31 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1B 0F AA 58 0E A6 8A C1 60 30 98 0A 97 C3 E5 70 B7 1C 4E 55 A3 D9 6A B4 11 35 34 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =27
+		0F AA 58 0E A6 8A C1 60 30 98 0A 97 C3 E5 70 B7 1C 4E 55 A3 D9 6A B4 11 35 34 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 07 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 36 35 34 39 38 37 39 38 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 26 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 26 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 24 81 03 01 21 80 82 02 81 02 8D 19 04 4D 6F 62 69 43 61 72 64 3A 0A 31 35 30 30 30 3E 36 35 34 39 38 37 39 38 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =24
+		MobiCard:
+15000>65498798
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 36 35 34 36 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 33 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 33 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 31 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1B 0F AA 58 0E A6 8A D5 60 30 98 CA 56 A3 E5 70 B7 1C 4E 65 AB D1 6C B5 11 36 35 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =27
+		0F AA 58 0E A6 8A D5 60 30 98 CA 56 A3 E5 70 B7 1C 4E 65 AB D1 6C B5 11 36 35 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 98 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 98 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 81 95 81 03 01 24 00 82 02 81 82 85 08 4D 6F 62 69 43 61 72 64 8F 08 01 35 30 30 20 74 75 67 8F 09 02 31 30 30 30 20 74 75 67 8F 09 03 32 35 30 30 20 74 75 67 8F 09 04 36 35 30 30 20 74 75 67 8F 0A 05 31 30 30 30 30 20 74 75 67 8F 0D 06 38 30 30 30 20 74 75 67 2F 33 30 78 8F 0E 07 31 35 30 30 30 20 74 75 67 2F 36 30 78 8F 0E 08 31 35 34 30 30 20 74 75 67 2F 39 30 78 8F 0E 09 32 31 30 30 30 20 74 75 67 2F 39 30 78 8F 0A 0A 33 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =8
+		MobiCard
+	ITEM:1 - 500 tug
+	ITEM:2 - 1000 tug
+	ITEM:3 - 2500 tug
+	ITEM:4 - 6500 tug
+	ITEM:5 - 10000 tug
+	ITEM:6 - 8000 tug/30x
+	ITEM:7 - 15000 tug/60x
+	ITEM:8 - 15400 tug/90x
+	ITEM:9 - 21000 tug/90x
+	ITEM:10 - 30000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 08 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 36 35 34 36 38 37 39 38 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 26 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 26 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 24 81 03 01 21 80 82 02 81 02 8D 19 04 4D 6F 62 69 43 61 72 64 3A 0A 31 35 34 30 30 3E 36 35 34 36 38 37 39 38 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =24
+		MobiCard:
+15400>65468798
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 36 35 34 36 36 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 33 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 33 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 31 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1B 0F AA 58 0E A6 8A D5 68 30 98 CA 56 A3 D9 70 B7 1C 4E 65 AB D1 6C B6 11 36 36 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =27
+		0F AA 58 0E A6 8A D5 68 30 98 CA 56 A3 D9 70 B7 1C 4E 65 AB D1 6C B6 11 36 36 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 02 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 44 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 44 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 42 81 03 01 24 00 82 02 81 82 85 0A 47 6C 6F 62 75 73 43 61 72 64 8F 09 01 33 30 30 30 20 74 75 67 8F 09 02 35 35 30 30 20 74 75 67 8F 09 03 38 38 30 30 20 74 75 67 8F 0A 04 31 31 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =10
+		GlobusCard
+	ITEM:1 - 3000 tug
+	ITEM:2 - 5500 tug
+	ITEM:3 - 8800 tug
+	ITEM:4 - 11000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 36 35 34 36 35 34 35 36 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 04 47 6C 6F 62 75 73 43 61 72 64 3A 0A 33 30 30 30 3E 36 35 34 36 35 34 35 36 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =25
+		GlobusCard:
+3000>65465456
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 35 34 36 35 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 32 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 32 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 30 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1A 0F AA 58 2E A6 9A C1 60 30 95 AD 46 B3 D5 68 35 9B AA 46 B3 D5 68 23 35 34 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =26
+		0F AA 58 2E A6 9A C1 60 30 95 AD 46 B3 D5 68 35 9B AA 46 B3 D5 68 23 35 34 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 02 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 44 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 44 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 42 81 03 01 24 00 82 02 81 82 85 0A 47 6C 6F 62 75 73 43 61 72 64 8F 09 01 33 30 30 30 20 74 75 67 8F 09 02 35 35 30 30 20 74 75 67 8F 09 03 38 38 30 30 20 74 75 67 8F 0A 04 31 31 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =10
+		GlobusCard
+	ITEM:1 - 3000 tug
+	ITEM:2 - 5500 tug
+	ITEM:3 - 8800 tug
+	ITEM:4 - 11000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 02 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 36 35 34 36 36 39 38 39 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 04 47 6C 6F 62 75 73 43 61 72 64 3A 0A 35 35 30 30 3E 36 35 34 36 36 39 38 39 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =25
+		GlobusCard:
+5500>65466989
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 35 36 35 36 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 32 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 32 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 30 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1A 0F AA 58 2E A6 AA D5 60 30 95 AD 46 B3 D9 72 B8 9C AA 66 AB D9 6A 23 36 35 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =26
+		0F AA 58 2E A6 AA D5 60 30 95 AD 46 B3 D9 72 B8 9C AA 66 AB D9 6A 23 36 35 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 02 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 44 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 44 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 42 81 03 01 24 00 82 02 81 82 85 0A 47 6C 6F 62 75 73 43 61 72 64 8F 09 01 33 30 30 30 20 74 75 67 8F 09 02 35 35 30 30 20 74 75 67 8F 09 03 38 38 30 30 20 74 75 67 8F 0A 04 31 31 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =10
+		GlobusCard
+	ITEM:1 - 3000 tug
+	ITEM:2 - 5500 tug
+	ITEM:3 - 8800 tug
+	ITEM:4 - 11000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 04 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 32 39 39 39 39 39 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 28 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 28 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 26 81 03 01 21 80 82 02 81 02 8D 1B 04 47 6C 6F 62 75 73 43 61 72 64 3A 0A 31 31 30 30 30 3E 39 39 32 39 39 39 39 39 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =26
+		GlobusCard:
+11000>99299999
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 35 34 35 34 36 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 33 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 33 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 31 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1B 0F AA 58 2E A6 8A C5 60 30 98 2A 97 93 E5 72 B9 5C 4E 55 A3 D5 68 B6 11 34 36 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =27
+		0F AA 58 2E A6 8A C5 60 30 98 2A 97 93 E5 72 B9 5C 4E 55 A3 D5 68 B6 11 34 36 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 03 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 4B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 4B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 49 81 03 01 24 00 82 02 81 82 85 11 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 09 01 31 35 30 30 20 74 75 67 8F 09 02 32 35 30 30 20 74 75 67 8F 09 03 35 30 30 30 20 74 75 67 8F 0A 04 31 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =17
+		Web2Call&Internet
+	ITEM:1 - 1500 tug
+	ITEM:2 - 2500 tug
+	ITEM:3 - 5000 tug
+	ITEM:4 - 10000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 32 36 39 38 39 38 37 39 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+90 00 
+OK
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C2 00 00 09 D3 07 02 02 01 81 10 01 01 
+ENVELOPE: Menu selection
+
+	DEVICE:KEYPAD -> SIM
+	ITEM ID:1
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 03 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 4B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 4B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 49 81 03 01 24 00 82 02 81 82 85 11 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 09 01 31 35 30 30 20 74 75 67 8F 09 02 32 35 30 30 20 74 75 67 8F 09 03 35 30 30 30 20 74 75 67 8F 0A 04 31 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =17
+		Web2Call&Internet
+	ITEM:1 - 1500 tug
+	ITEM:2 - 2500 tug
+	ITEM:3 - 5000 tug
+	ITEM:4 - 10000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 32 39 36 34 36 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+90 00 
+OK
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C2 00 00 09 D3 07 02 02 01 81 10 01 01 
+ENVELOPE: Menu selection
+
+	DEVICE:KEYPAD -> SIM
+	ITEM ID:1
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 03 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 4B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 4B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 49 81 03 01 24 00 82 02 81 82 85 11 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 09 01 31 35 30 30 20 74 75 67 8F 09 02 32 35 30 30 20 74 75 67 8F 09 03 35 30 30 30 20 74 75 67 8F 0A 04 31 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =17
+		Web2Call&Internet
+	ITEM:1 - 1500 tug
+	ITEM:2 - 2500 tug
+	ITEM:3 - 5000 tug
+	ITEM:4 - 10000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 04 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 36 35 34 35 34 35 34 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+90 00 
+OK
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C2 00 00 09 D3 07 02 02 01 81 10 01 01 
+ENVELOPE: Menu selection
+
+	DEVICE:KEYPAD -> SIM
+	ITEM ID:1
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 03 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 4B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 4B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 49 81 03 01 24 00 82 02 81 82 85 11 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 09 01 31 35 30 30 20 74 75 67 8F 09 02 32 35 30 30 20 74 75 67 8F 09 03 35 30 30 30 20 74 75 67 8F 0A 04 31 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =17
+		Web2Call&Internet
+	ITEM:1 - 1500 tug
+	ITEM:2 - 2500 tug
+	ITEM:3 - 5000 tug
+	ITEM:4 - 10000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 03 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 36 35 34 36 35 34 36 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+90 00 
+OK
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C2 00 00 09 D3 07 02 02 01 81 10 01 01 
+ENVELOPE: Menu selection
+
+	DEVICE:KEYPAD -> SIM
+	ITEM ID:1
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 03 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 4B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 4B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 49 81 03 01 24 00 82 02 81 82 85 11 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 09 01 31 35 30 30 20 74 75 67 8F 09 02 32 35 30 30 20 74 75 67 8F 09 03 35 30 30 30 20 74 75 67 8F 0A 04 31 30 30 30 30 20 74 75 67 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =17
+		Web2Call&Internet
+	ITEM:1 - 1500 tug
+	ITEM:2 - 2500 tug
+	ITEM:3 - 5000 tug
+	ITEM:4 - 10000 tug
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 02 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 32 39 39 36 34 36 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+90 00 
+OK
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 C2 00 00 09 D3 07 02 02 01 81 10 01 01 
+ENVELOPE: Menu selection
+
+	DEVICE:KEYPAD -> SIM
+	ITEM ID:1
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 04 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 41 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 41 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 3F 81 03 01 24 00 82 02 81 82 85 0B 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 01 32 35 30 30 30 20 74 75 67 2F 33 30 20 78 6F 6E 8F 14 02 34 34 30 30 30 20 74 75 67 2F 33 30 78 6F 6E 2F 31 47 42 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =11
+		UlusnetCard
+	ITEM:1 - 25000 tug/30 xon
+	ITEM:2 - 44000 tug/30xon/1GB
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 01 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 32 39 36 34 36 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 29 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 29 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 27 81 03 01 21 80 82 02 81 02 8D 1C 04 55 6C 75 73 6E 65 74 43 61 72 64 3A 0A 32 35 30 30 30 3E 39 39 32 39 36 34 36 34 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =27
+		UlusnetCard:
+25000>99296464
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 39 39 39 39 39 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 33 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 33 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 31 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1B 0F AA 58 6E A6 92 D5 60 30 98 2A 97 93 E5 6C 34 1B 4D 95 CB E5 72 B9 11 39 39 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =27
+		0F AA 58 6E A6 92 D5 60 30 98 2A 97 93 E5 6C 34 1B 4D 95 CB E5 72 B9 11 39 39 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 04 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 41 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 41 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 3F 81 03 01 24 00 82 02 81 82 85 0B 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 01 32 35 30 30 30 20 74 75 67 2F 33 30 20 78 6F 6E 8F 14 02 34 34 30 30 30 20 74 75 67 2F 33 30 78 6F 6E 2F 31 47 42 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =11
+		UlusnetCard
+	ITEM:1 - 25000 tug/30 xon
+	ITEM:2 - 44000 tug/30xon/1GB
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0F 81 03 01 24 00 02 02 82 81 03 01 00 10 01 02 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 22 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 22 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 20 81 03 01 23 00 82 02 81 82 8D 11 04 43 65 6E 65 67 6C 65 78 20 64 75 67 61 61 72 3F 91 02 08 08 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =00
+	DEVICE:SIM -> ME
+	STR:length =16
+		Ceneglex dugaar?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =8
+		max =8
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 17 81 03 01 23 00 02 02 82 81 03 01 00 0D 09 04 39 39 39 32 36 36 35 34 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 29 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 29 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 27 81 03 01 21 80 82 02 81 02 8D 1C 04 55 6C 75 73 6E 65 74 43 61 72 64 3A 0A 34 34 30 30 30 3E 39 39 39 32 36 36 35 34 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =27
+		UlusnetCard:
+44000>99926654
+		format:8 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 1B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 1B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 19 81 03 01 23 04 82 02 81 82 8D 0A 04 4E 75 75 63 20 6B 6F 64 3F 91 02 01 05 90 00 
+GET INPUT
+
+	CMD:GET INPUT
+		Qualifier =04
+	DEVICE:SIM -> ME
+	STR:length =9
+		Nuuc kod?
+		format:8 BITS
+		class:no class meaning
+	LENGTHS:
+		min =1
+		max =5
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 14 81 03 01 23 04 02 02 82 81 03 01 00 0D 06 04 35 34 35 34 35 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 33 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 33 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 31 81 03 01 12 00 82 02 81 83 05 09 54 6F 70 20 55 70 2E 2E 2E 0A 1B 0F AA 58 6E A6 A2 D1 60 30 98 2A 97 CB C9 6C B6 1A 4D 55 A3 D5 68 B5 11 34 35 23 90 00 
+SEND USSD
+
+	CMD:SEND USSD
+		Qualifier =00
+	DEVICE:SIM -> NETWORK
+	ALPHA ID:length =9
+		Top Up...
+	USSD:length =27
+		0F AA 58 6E A6 A2 D1 60 30 98 2A 97 CB C9 6C B6 1A 4D 55 A3 D5 68 B5 11 34 35 23 
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 28 81 03 01 12 00 02 02 82 81 03 01 00 0D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 27 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 27 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 25 81 03 01 21 80 82 02 81 02 8D 1A 00 D5 E9 94 08 9A D3 E5 69 F7 19 24 2F 8F CB 69 7B 99 0C 32 CB DF 6D D0 74 0A 90 00 
+DISPLAY TEXT
+
+	CMD:DISPLAY TEXT
+		Qualifier =80
+	DEVICE:SIM -> DISPLAY
+	STR:length =28
+		USSD string received from SS
+		format:7 BITS
+		class:no class meaning
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 14 00 00 0C 81 03 01 21 80 02 02 82 81 03 01 00 
+TERMINAL RESPONSE
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+91 7B 
+OK + PROACTIVE
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 12 00 00 7B 
+FETCH
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+D0 79 81 03 01 24 00 82 02 81 82 85 0D 4D 6F 6C 69 6C 65 20 44 65 61 6C 65 72 8F 09 01 4D 6F 62 69 43 61 72 64 8F 0B 02 47 6C 6F 62 75 73 43 61 72 64 8F 12 03 57 65 62 32 43 61 6C 6C 26 49 6E 74 65 72 6E 65 74 8F 0C 04 55 6C 75 73 6E 65 74 43 61 72 64 8F 11 05 55 6C 64 65 67 64 65 6C 20 73 68 61 6C 67 61 78 8F 12 06 4E 75 75 63 20 64 75 67 61 61 72 20 73 6F 6C 69 78 90 00 
+SELECT ITEM
+
+	CMD:SELECT ITEM
+		Qualifier =00
+	DEVICE:SIM -> ME
+	ALPHA ID:length =13
+		Molile Dealer
+	ITEM:1 - MobiCard
+	ITEM:2 - GlobusCard
+	ITEM:3 - Web2Call&Internet
+	ITEM:4 - UlusnetCard
+	ITEM:5 - Uldegdel shalgax
+	ITEM:6 - Nuuc dugaar solix
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
+>>> ME -> CARD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+A0 F2 00 00 07 
+STATUS
+
+<<< CARD -> ME <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+00 00 16 98 7F 20 02 90 00 
+OK, DATA
+
